@@ -46,4 +46,9 @@ class people::jantman {
     source => "puppet:///modules/people/synergy.conf",
     owner  => $::boxen_user,
   }
+
+  package {'synergy':
+    provider => 'appdmg_eula',
+    source   => 'https://s3-us-west-2.amazonaws.com/jantman-repo/osx/synergy-master-efd0108-MacOSX1010-x86_64.dmg',
+  }
 }
