@@ -8,14 +8,14 @@ class people::jantman {
   include emacs
   include wget
 
-  class { 'libreoffice':
-    version => '5.0.1',
-  }
+  #class { 'libreoffice':
+  #  version => '5.0.1',
+  #}
 
-  class { 'libreoffice::languagepack':
-    version => '5.0.1',
-    locale  => 'us',
-  }
+  #class { 'libreoffice::languagepack':
+  #  version => '5.0.1',
+  #  locale  => 'us',
+  #}
 
   class {'vagrant':
   }

@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: Maarc/puppet-libreoffice
-  specs:
-    libreoffice (4.2.6)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.11.0)
@@ -144,7 +139,6 @@ DEPENDENCIES
   homebrew (= 1.13.0)
   hub (= 1.4.1)
   inifile (= 1.4.1)
-  libreoffice (= 4.2.6)
   module_data (= 0.0.4)
   openssl (= 1.0.0)
   osx (= 2.8.0)
