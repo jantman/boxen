@@ -58,4 +58,16 @@ class people::jantman {
     value => true,
     type  => 'onoff',
   }
+
+  # OSX stuff
+  osx::recovery_message { 'This Mac belongs to Jason Antman (jantman) jason@jasonantman.com 201-906-7347': }
+  include osx::global::enable_keyboard_control_access
+  include osx::global::expand_save_dialog
+  include osx::finder::unhide_library
+  include osx::finder::show_hidden_files
+  include osx::finder::show_all_filename_extensions
+  # disable "natural" scrolling
+  class { 'osx::global::natural_mouse_scrolling':
+    enabled => false
+  }
 }
