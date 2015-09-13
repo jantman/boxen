@@ -8,7 +8,10 @@ class people::jantman {
   include emacs
   include wget
 
-  include libreoffice
+  class { 'libreoffice':
+    version => '5.0.1',
+  }
+
   class { 'libreoffice::languagepack':
     locale => 'us',
   }
