@@ -1,6 +1,7 @@
 class people::jantman {
 
   # begin modules from Puppetfile
+  include brewcask
   include screen
   include chrome
   include spotify
@@ -27,6 +28,9 @@ class people::jantman {
   # END modules from Puppetfile
 
   # apps
-  package { 'skype': provider => 'brewcask' }
+  package { 'skype':
+    provider => 'brewcask'
+    require  => Class['brewcask'],
+  }
 
 }
