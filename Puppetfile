@@ -78,8 +78,6 @@ github "emacs", "1.3.0"
 github "vlc", "1.1.0"
 # https://github.com/boxen/puppet-wget
 github "wget", "1.0.1"
-# https://github.com/Maarc/puppet-libreoffice for https://github.com/boxen/puppet-libreoffice/pull/9
-github "libreoffice", "4.2.6", :repo => 'Maarc/puppet-libreoffice'
 # https://github.com/boxen/puppet-vagrant
 github "vagrant", "3.3.3"
 # https://github.com/boxen/puppet-virtualbox
