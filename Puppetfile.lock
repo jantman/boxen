@@ -54,6 +54,11 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.8.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (3.0.0)
@@ -142,6 +147,7 @@ DEPENDENCIES
   libreoffice (= 4.2.6)
   module_data (= 0.0.4)
   openssl (= 1.0.0)
+  osx (= 2.8.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
   python (= 2.0.1)
