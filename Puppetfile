@@ -65,3 +65,26 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+# https://github.com/boxen/puppet-screen
+github "screen", "0.0.2"
+# https://github.com/boxen/puppet-chrome
+github "chrome", "1.2.0"
+# https://github.com/boxen/puppet-spotify
+github "spotify", "1.0.2"
+# https://github.com/boxen/puppet-emacs
+github "emacs", "1.3.0"
+# https://github.com/boxen/puppet-vlc
+github "vlc", "1.1.0"
+# https://github.com/boxen/puppet-wget
+github "wget", "1.0.1"
+# https://github.com/boxen/puppet-libreoffice
+github "libreoffice", "4.2.6"
+# https://github.com/boxen/puppet-vagrant
+github "vagrant", "3.3.3"
+# https://github.com/boxen/puppet-virtualbox
+github "virtualbox", "1.0.13"
+# https://github.com/boxen/puppet-firefox
+github "firefox", "1.2.3"
+# https://github.com/boxen/puppet-python
+github "python", "2.0.1"
