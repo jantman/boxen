@@ -60,7 +60,8 @@ class people::jantman {
   }
 
   # OSX stuff
-  osx::recovery_message { 'This Mac belongs to Jason Antman (jantman) jason@jasonantman.com 201-906-7347': }
+  # this next one throws errors on 10.10.3
+  #osx::recovery_message { 'This Mac belongs to Jason Antman (jantman) jason@jasonantman.com 201-906-7347': }
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_save_dialog
   include osx::finder::unhide_library
