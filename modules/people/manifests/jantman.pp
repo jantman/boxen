@@ -39,4 +39,11 @@ class people::jantman {
     require  => Class['brewcask'],
   }
 
+  # synergy
+  file {'synergy.conf':
+    ensure => present,
+    path   => "/Users/${::boxen_user}/synergy.conf",
+    source => "puppet:///modules/people/synergy.conf",
+    owner  => $::boxen_user,
+  }
 }
