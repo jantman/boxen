@@ -88,3 +88,5 @@ github "virtualbox", "1.0.13"
 github "firefox", "1.2.3"
 # https://github.com/boxen/puppet-python
 github "python", "2.0.1"
+# https://github.com/boxen/puppet-osx
+github "osx", "2.8.0"
