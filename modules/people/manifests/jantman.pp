@@ -29,7 +29,7 @@ class people::jantman {
 
   # apps
   package { 'skype':
-    provider => 'brewcask'
+    provider => 'brewcask',
     require  => Class['brewcask'],
   }
 
