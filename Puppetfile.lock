@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: Maarc/puppet-libreoffice
+  specs:
+    libreoffice (4.2.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.11.0)
@@ -42,11 +47,6 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.4.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-libreoffice
-  specs:
-    libreoffice (4.2.6)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
