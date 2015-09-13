@@ -13,7 +13,8 @@ class people::jantman {
   }
 
   class { 'libreoffice::languagepack':
-    locale => 'us',
+    version => '5.0.1',
+    locale  => 'us',
   }
 
   class {'vagrant':
