@@ -128,6 +128,11 @@ GITHUBTARBALL
   specs:
     module_data (0.0.4)
 
+GITHUBTARBALL
+  remote: rolfvandekrol/puppet-systemsetup
+  specs:
+    systemsetup (0.0.1)
+
 DEPENDENCIES
   boxen (= 3.11.0)
   brewcask (= 0.0.6)
@@ -150,6 +155,7 @@ DEPENDENCIES
   spotify (= 1.0.2)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
+  systemsetup (= 0.0.1)
   vagrant (= 3.3.3)
   virtualbox (= 1.0.13)
   vlc (= 1.1.0)

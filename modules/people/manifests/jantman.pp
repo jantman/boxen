@@ -51,4 +51,11 @@ class people::jantman {
     provider => 'appdmg_eula',
     source   => 'https://s3-us-west-2.amazonaws.com/jantman-repo/osx/synergy-master-efd0108-MacOSX1010-x86_64.dmg',
   }
+
+  # SSH server
+  systemsetup::base {'systemsetup-setremotelogin':
+    key   => 'remotelogin',
+    value => true,
+    type  => 'onoff',
+  }
 }
