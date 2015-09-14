@@ -91,3 +91,5 @@ github "osx", "2.8.0"
 
 # https://github.com/rolfvandekrol/puppet-systemsetup
 github "systemsetup", "0.0.1", :repo => 'rolfvandekrol/puppet-systemsetup'
+
+github "hipchat", '1.1.3'
