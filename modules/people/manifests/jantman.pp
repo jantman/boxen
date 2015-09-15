@@ -73,4 +73,38 @@ class people::jantman {
   class { 'osx::global::natural_mouse_scrolling':
     enabled => false
   }
+
+  # we really want something nicer than an Exec here, but
+  # https://github.com/glarizza/puppet-property_list_key/issues/4
+
+  # set Pro terminal as default
+  exec {'terminal_pro-startup':
+    command => "/usr/libexec/PlistBuddy -c \"set :'Startup Window Settings' Pro\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist",
+    onlyif  => "/usr/libexec/PlistBuddy -c \"print :'Startup Window Settings'\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist | grep -v Pro",
+    user    => $::boxen_user,
+  }
+
+  exec {'terminal_pro-default':
+    command => "/usr/libexec/PlistBuddy -c \"set :'Default Window Settings' Pro\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist",
+    onlyif  => "/usr/libexec/PlistBuddy -c \"print :'Default Window Settings'\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist | grep -v Pro",
+    user    => $::boxen_user,
+  }
+
+  # use Option as Meta key - Basic
+  exec {'option_as_meta-basic':
+    command => "/usr/libexec/PlistBuddy -c \"set :'Window Settings':Basic:useOptionAsMetaKey true\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist",
+    onlyif  => "/usr/libexec/PlistBuddy -c \"print :'Window Settings':Basic:useOptionAsMetaKey\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist | grep -v true",
+    user    => $::boxen_user,
+  }
+
+  # use Option as Meta key - Pro
+  exec {'option_as_meta-pro':
+    command => "/usr/libexec/PlistBuddy -c \"set :'Window Settings':Pro:useOptionAsMetaKey true\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist",
+    onlyif  => "/usr/libexec/PlistBuddy -c \"print :'Window Settings':Pro:useOptionAsMetaKey\" /Users/${::boxen_user}/Library/Preferences/com.apple.Terminal.plist | grep -v true",
+    user    => $::boxen_user,
+  }
+
+  # TODO - figure out how to set terminal keybindings in plist file
+  # per <http://fplanque.com/dev/mac/mac-osx-terminal-page-up-down-home-end-of-line>
+
 }
