@@ -88,6 +88,8 @@ github "firefox", "1.2.3"
 github "python", "2.0.1"
 # https://github.com/boxen/puppet-osx
 github "osx", "2.8.0"
+# https://github.com/boxen/puppet-vlc
+github "vlc", "1.1.0"
 
 # https://github.com/rolfvandekrol/puppet-systemsetup
 github "systemsetup", "0.0.1", :repo => 'rolfvandekrol/puppet-systemsetup'

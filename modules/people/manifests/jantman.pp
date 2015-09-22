@@ -9,6 +9,7 @@ class people::jantman {
   include wget
   include hipchat
   include mumble
+  include vlc
 
   # boxen/puppetlabs-libreoffice and all its forks are broken; do this here
   $libreoffice_version = '5.0.1'
