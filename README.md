@@ -6,6 +6,8 @@ The Boxen rubygem and the Boxen puppet modules are only a framework for getting
 things done.
 This repository template is just a basic example of _how_ to do things with them.
 
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+
 ## Getting Started
 
 To give you a brief overview, we're going to:
